@@ -18,7 +18,6 @@ if(portNum == null || portNum == ""){
     portNum = process.argv[2];
 }
 
-app.listen(process.env.PORT || 8080, () => console.log('App launched successfully'));
 // Send HTML at root, do not change
 app.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/public/index.html'));
@@ -299,4 +298,4 @@ app.get('/getArtistAlbumsFromDb', function(req , res){
   });
 });
 app.listen(portNum);
-console.log('Running app at localhost: ' + portNum);
+console.log('Running app at PORT: ' + portNum);
