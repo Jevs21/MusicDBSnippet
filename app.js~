@@ -6,15 +6,19 @@ const app     = express();
 const path    = require("path");
 const fileUpload = require('express-fileupload');
 
-app.use(fileUpload());
+app.use(express.static('public'));
 
 // Minimization
 const fs = require('fs');
 const JavaScriptObfuscator = require('javascript-obfuscator');
 
 // Important, pass in port as in `npm run dev 1234`, do not change
-const portNum = process.argv[2];
+let portNum = process.env.PORT;
+if(portNum == null || portNum == ""){
+    portNum = process.argv[2];
+}
 
+app.listen(process.env.PORT || 8080, () => console.log('App launched successfully'));
 // Send HTML at root, do not change
 app.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/public/index.html'));
