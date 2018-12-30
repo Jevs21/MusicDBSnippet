@@ -1,0 +1,49 @@
+
+.artist_img {
+	width: 400px;
+	height: auto;
+}
+
+.artist_title {
+	font-size: 1.4em;
+}
+
+.artist_desc {
+
+}
+
+/* ARTIST INFO TABLE */
+#artist_info_table tr td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#title_cell {
+	vertical-align: top;
+}
+#artist_title {
+	font-size: 1.65em;
+	font-weight: bold;
+}
+#artist_info_table tr td p {
+	font-size: 1.2em;
+}
+#artist_comment {
+	margin-top: 2%;
+}
+/********************/
+
+/* ARTIST ALBUM LIST TABLE */
+#artist_album_table {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	margin-bottom: 8%;
+}
+#artist_album_table tr th{
+	text-align: center;
+}
+#artist_album_table, #artist_album_table tr th, #artist_album_table tr td{
+	border: 4px double white;
+}
+/*************************/

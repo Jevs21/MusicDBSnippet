@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Album</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content=""><!-- Search engines dont use this anymore -->
+    <meta name="author" content="Jordan Evans">
+
+	<!-- Load jquery, bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/album.css">
+    <!-- Custom CSS End -->
+</head>
+<body>
+<div class='container-fluid'>
+    <div class='row'>
+        <div class='col-md-3'></div>
+        <div id='title_container' class="col-sm-12 col-md-6">
+            <img src=''>
+        </div>
+        <div class='col-md-3'></div>
+    </div>
+    <div class='row'>
+        <div class='col-md-3'></div>
+        <div id='menu_container' class='col-sm-12 col-md-6'>
+            <table id='menu_table'>
+                <tr>
+                    <td><a href='/artist' class='menu_button'>ARTISTS</a></td>
+                    <td><a href='/album' class='menu_button'>ALBUMS</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class='col-md-3'></div>
+    </div>
+    <hr>
+    <div class='row'>
+        <div class='col-md-3'></div>
+        <div id='sort_container' class='col-sm-12 col-md-6'>
+            <form id='sort_form'>
+                <table id="sort_table">
+                    <tr>
+                        <td>
+                            <label for="album_sort_dropdown">Sort By</label>
+                            <select id="album_sort_dropdown">
+                                <option value='release_date_new_old'>Release Date New-Old</option>
+                                <option value='release_date_old_new'>Release Date Old-New</option>
+                                <option value='album_a_z'>Album Title A-Z</option>
+                                <option value='album_z_a'>Album Title Z-A</option>
+                                <option value='rating_hi_lo'>Rating Hi-Lo</option>
+                                <option value='rating_hi_lo'>Rating Lo-Hi</option>
+                                <option value='artist_a_z'>Artist Name A-Z</option>
+                                <option value='artist_z_a'>Artist Name Z-A</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="album_type_dropdown">Type</label>
+                            <select id="album_type_dropdown">
+                                <option value='all'>All</option>
+                                <option value='studio'>Studio Album</option>
+                                <option value='mixtape'>Mixtape</option>
+                                <option value='other'>Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type='button' id='sort_button'>Sort</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+        <div class='col-md-3'></div>
+    </div>
+    <div class='row'>
+        <div class='col-md-3'></div>
+    	<div class='content_container col-sm-12 col-md-6'>
+            <table id='content_table'>            
+            </table>
+    	</div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class='row'>
+        <div class='col-md-3'></div>
+        <div id='bottom_gif_container' class="col-sm-12 col-md-6">
+        </div>
+        <div class='col-md-3'></div>
+    </div>
+</div>
+<script src="/album.js"></script>
+</body>
+</html>

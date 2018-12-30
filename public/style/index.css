@@ -1,0 +1,32 @@
+/* TOP CONTENT MENU */
+#top_content_options_table {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3%;
+}
+#top_content_options_table tr td {
+	text-align: center;
+}
+.top_content_tab a {
+	background-color: #BCBCBC;
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 1.1em;
+    padding: 3px 10px 3px 10px;
+    border-style: outset;
+    border-top: 4px solid #CCCCCC;
+    border-right: 4px solid #333333;
+    border-bottom: 4px solid #333333;
+    border-left: 4px solid #CCCCCC;
+}
+/********************/
+/* TOP CONTENT TABLE */
+#top_content_table, #top_content_table > tr > td, #top_content_table > tr > th {
+	border: 4px double white;
+	padding: 5px 5px 5px 5px;
+}
+#top_content_table {
+	width: 100%;
+}
+/********************/

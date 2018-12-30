@@ -1,0 +1,50 @@
+
+.album_img {
+	width: 400px;
+	height: auto;
+	border: 1px solid white;
+}
+
+.album_title {
+	font-size: 1.4em;
+}
+
+.album_desc {
+
+}
+
+/* ALBUM INFO TABLE */
+#album_info_table tr td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#title_cell {
+	vertical-align: top;
+}
+#album_title {
+	font-size: 1.65em;
+	font-weight: bold;
+}
+#album_info_table tr td p {
+	font-size: 1.2em;
+}
+#album_comment {
+	margin-top: 2%;
+}
+/********************/
+
+/* ALBUM TRACKLIST TABLE */
+#album_tracklist_table {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+#album_tracklist_table tr th{
+	text-align: center;
+}
+#album_tracklist_table, #album_tracklist_table tr th, #album_tracklist_table tr td{
+	border: 4px double white;
+}
+/*************************/

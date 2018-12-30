@@ -1,0 +1,110 @@
+html {
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    background-image: url("../assets/StarryBG.jpg");
+    background-repeat: all;
+}
+body {
+    height: 100%;
+    min-height: 100%;
+    line-height: 1.75;
+    background-color: #FFFFFF;
+    background-image: url("../assets/StarryBG.jpg");
+    background-repeat: all;
+}
+a:link:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-decoration: underline;
+    cursor: pointer;
+    cursor: hand;
+}
+input[type=submit], button {
+    cursor: pointer;
+    cursor: hand;
+}
+
+td, th {
+    color: #FFFFFF;
+}
+
+
+/*
+ User Added CSS
+    - High contrast dark theme
+    BG:     #2C292D
+    Text:   #FFF6F6
+    Red:    #FF6188
+    Cyan:   #78DCE8
+    Yellow: #FFD866
+    Green:  #A9DC76
+    Purple: #AB9DF2
+ */
+ p, span {
+    font-family: 'Times New Roman';
+ }
+
+/* BACKGROUND RULES */
+.gif_slot {
+    position: relative;
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+.gif_slot > .gif_img {
+    display: block;
+    margin: auto;
+}
+/***********************/
+
+/* TITLE RULES */
+#title_container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+/***************/
+
+/* MENU RULES */
+
+#menu_table {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    text-align: center;
+    
+}
+.menu_button {
+    background-color: #BCBCBC;
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 6px 20px 6px 20px;
+    border-style: outset;
+    border-top: 6px solid #CCCCCC;
+    border-right: 6px solid #333333;
+    border-bottom: 6px solid #333333;
+    border-left: 6px solid #CCCCCC;
+}
+hr {
+    border-top: 1px solid white;
+    margin-bottom: 2%;
+}
+/**************/
+
+/* BOTTOM GIF */
+#bottom_gif_container {
+
+}
+#bottom_gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+/**************/

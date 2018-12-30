@@ -1,0 +1,44 @@
+/* SORT TABLE */
+#sort_table {
+	width: 60%;
+	table-layout: fixed;
+	margin-left:auto;
+	margin-right: auto;
+}
+#sort_table tr td {
+	text-align: center;
+	vertical-align: middle;
+}
+#sort_table tr td label {
+	font-size: 1.1em;
+}
+#sort_button {
+    background-color: #BCBCBC;
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1px 15px 1px 15px;
+    border-style: outset;
+    border-top: 3px solid #CCCCCC;
+    border-right: 3px solid #333333;
+    border-bottom: 3px solid #333333;
+    border-left: 3px solid #CCCCCC;
+}
+/**************/
+
+
+
+/* CONTENT TABLE */
+#content_table {
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+#content_table tr th{
+	text-align: center;
+}
+#content_table, #content_table tr th, #content_table tr td{
+	border: 4px double white;
+}
+/*****************/
