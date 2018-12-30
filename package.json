@@ -1,7 +1,7 @@
 {
   "name": "a3",
   "version": "1.0.0",
-  "description": "CIS2750 W18 - A3",
+  "description": "Jevs Music DB",
   "main": "app.js",
   "engine": { "node" : "==8.10" },
   "scripts": {
