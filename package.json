@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Jevs Music DB",
   "main": "app.js",
-  "engine": { "node" : "==8.10" },
+  "engines": { "node" : "==8.10" },
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node app.js"
