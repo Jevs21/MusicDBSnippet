@@ -16,6 +16,7 @@ const JavaScriptObfuscator = require('javascript-obfuscator');
 let portNum = process.env.PORT;
 if(portNum == null || portNum == ""){
     portNum = process.argv[2];
+
 }
 
 // Send HTML at root, do not change
