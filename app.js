@@ -144,15 +144,11 @@ app.get('/assets/:name', function(req , res){
     }
   });
 });
-//******************** Your code goes here ******************** 
+
+// *************************************************************
 var mysql = require('mysql');
 
-var con = mysql.createConnection({
-  host: "mysql.jordanevans.me",
-  user: "jevsadmin",
-  password: "Harley0727",
-  database: "jevs_music_db"
-});
+/* REMOVED FOR SECURITY RESONS */
 
 //Initiate connection
 con.connect(err => {
@@ -166,7 +162,7 @@ con.connect(err => {
 // Gif retreival endpoint
 app.get('/getGifList', function(req , res){
   console.log("\n/getGifList endpoint called.");
-  let db_query = "SELECT * FROM GIF_LIST ORDER BY RAND()";
+  let db_query = /* REMOVED FOR SECURITY RESONS */;
   con.query(db_query, function (err, result, fields) {
     if (err) throw err;
     console.log(result);
@@ -178,7 +174,7 @@ app.get('/getGifList', function(req , res){
 // getRecentAlbumsList endpoint
 app.get('/getRecentAlbumsList', function(req , res){
   console.log("\n/getRecentAlbumsList endpoint called.");
-  let db_query = "SELECT * FROM ALBUM INNER JOIN ARTIST ON ALBUM.artist_id=ARTIST.id ORDER BY release_date DESC LIMIT 10";
+  let db_query = /* REMOVED FOR SECURITY RESONS */;
   con.query(db_query, function (err, result, fields) {
     if (err) throw err;
     console.log(result);
@@ -189,7 +185,7 @@ app.get('/getRecentAlbumsList', function(req , res){
 // getMyList endpoint
 app.get('/getMyList', function(req , res){
   console.log("\n/getMyList endpoint called.");
-  let db_query = "SELECT * FROM MY_LIST INNER JOIN ALBUM ON MY_LIST.album_id=ALBUM.id INNER JOIN ARTIST ON ALBUM.artist_id=ARTIST.id ORDER BY MY_LIST.id DESC LIMIT 10";
+  let db_query = /* REMOVED FOR SECURITY RESONS */
   con.query(db_query, function (err, result, fields) {
     if (err) throw err;
     console.log(result);
@@ -200,7 +196,7 @@ app.get('/getMyList', function(req , res){
 // getTopAlbums endpoint
 app.get('/getTopAlbumsList', function(req , res){
   console.log("\n/getTopAlbumsList endpoint called.");
-  let db_query = "SELECT * FROM ALBUM INNER JOIN ARTIST ON ALBUM.artist_id=ARTIST.id ORDER BY ALBUM.rating DESC LIMIT 10";
+  let db_query = /* REMOVED FOR SECURITY RESONS */
   con.query(db_query, function (err, result, fields) {
     if (err) throw err;
     console.log(result);
@@ -211,7 +207,7 @@ app.get('/getTopAlbumsList', function(req , res){
 // getTopArtistsList endpoint
 app.get('/getTopArtistsList', function(req , res){
   console.log("\n/getTopArtistsList endpoint called.");
-  let db_query = "SELECT * FROM ARTIST ORDER BY rating DESC LIMIT 10";
+  let db_query = /* REMOVED FOR SECURITY RESONS */
   con.query(db_query, function (err, result, fields) {
     if (err) throw err;
     console.log(result);
@@ -264,7 +260,7 @@ app.get('/getArtistPageContent', function(req , res){
 // /getAlbumFromDb endpoint
 app.get('/getAlbumFromDb', function(req , res){
   console.log("\n/getAlbumFromDb endpoint called.");
-  let db_query = "SELECT * FROM ALBUM WHERE title='"+req.query.title+"'";
+  let db_query = /* REMOVED FOR SECURITY RESONS */
   console.log(db_query);
   con.query(db_query, function (err, result, fields) {
     if (err) throw err;
@@ -279,7 +275,7 @@ app.get('/getAlbumFromDb', function(req , res){
 // /getArtistFromDb endpoint
 app.get('/getArtistFromDb', function(req , res){
   console.log("\n/getArtistFromDb endpoint called.");
-  let db_query = "SELECT * FROM ARTIST WHERE name='"+req.query.name+"'";
+  let db_query = /* REMOVED FOR SECURITY RESONS */
   console.log(db_query);
   con.query(db_query, function (err, result, fields) {
     if (err) throw err;
@@ -290,7 +286,7 @@ app.get('/getArtistFromDb', function(req , res){
 // /getArtistAlbumsFromDb endpoint
 app.get('/getArtistAlbumsFromDb', function(req , res){
   console.log("\n/getArtistAlbumsFromDb endpoint called.");
-  let db_query = "SELECT * FROM ALBUM WHERE artist_id="+req.query.artist_id+" ORDER BY release_date DESC";
+  let db_query = /* REMOVED FOR SECURITY RESONS */
   console.log(db_query);
   con.query(db_query, function (err, result, fields) {
     if (err) throw err;
